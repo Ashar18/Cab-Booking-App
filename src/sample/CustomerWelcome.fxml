@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.welcomeController">
+   <children>
+      <VBox prefHeight="532.0" prefWidth="180.0" style="-fx-background-color: ffc000;">
+         <children>
+            <VBox prefHeight="147.0" prefWidth="212.0" />
+            <Button fx:id="button_profile" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#profileOnAction" prefHeight="44.0" prefWidth="188.0" style="-fx-background-color: FABD02;" text="Profile" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_history" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#historyOnAction" prefHeight="41.0" prefWidth="258.0" style="-fx-background-color: FABD02;" text="My Trips" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_logout" alignment="BASELINE_LEFT" graphicTextGap="30.0" layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="41.0" prefWidth="258.0" style="-fx-background-color: FABD02;" text="Logout" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="110.0" fitWidth="180.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="353.0" fitWidth="488.0" layoutX="212.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="344.0" layoutY="14.0" prefHeight="41.0" prefWidth="218.0" text="Welcome to 'CABZ'" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.46299639344215393" green="0.5" blue="0.25" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8654422760009766" green="0.9342105388641357" blue="0.2465277761220932" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="button_book" layoutX="394.0" layoutY="428.0" mnemonicParsing="false" onAction="#bookOnAction" prefHeight="35.0" prefWidth="123.0" style="-fx-background-color: #000000;" text="BOOK NOW" textFill="#fabd02">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="352.0" layoutY="474.0" prefHeight="56.0" prefWidth="202.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="43.0" layoutX="88.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-refresh-90.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_refresh" alignment="BASELINE_LEFT" graphicTextGap="30.0" layoutX="84.0" layoutY="11.0" mnemonicParsing="false" onAction="#refreshOnAction" opacity="0.0" prefHeight="35.0" prefWidth="43.0" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

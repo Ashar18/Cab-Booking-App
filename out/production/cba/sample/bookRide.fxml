@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.bookRideController">
+   <children>
+      <AnchorPane layoutX="194.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="556.0">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="249.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-refresh-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="93.0" layoutX="272.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Vip.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="74.0" layoutX="399.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Van-Minibus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="156.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Buiness.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="83.0" layoutX="35.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Standard.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="radio_standard" layoutX="30.0" layoutY="167.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="104.0" selected="true" text="Standard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="vehicle" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radio_buisness" layoutX="153.0" layoutY="167.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="104.0" text="Buisness" toggleGroup="$vehicle">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio_vip" layoutX="286.0" layoutY="167.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="104.0" text="VIP" toggleGroup="$vehicle">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Blend opacity="0.0" />
+               </effect>
+            </RadioButton>
+            <RadioButton fx:id="radio_van" layoutX="396.0" layoutY="167.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="104.0" text="Mini van" toggleGroup="$vehicle">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="32.0" layoutY="212.0" text="Not sure?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="h_tarrif" layoutX="101.0" layoutY="208.0" onAction="#tarrifOnAction" prefHeight="26.0" prefWidth="114.0" text="See our Tarriffs" textFill="#d31919" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="button_confirm" layoutX="206.0" layoutY="396.0" mnemonicParsing="false" onAction="#confirmOnAction" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: #000000; -fx-background-radius: 15px;" text="Confirm Ride" textFill="#fabd02">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="26.0" layoutY="58.0" prefHeight="29.0" prefWidth="163.0" text="Select Vehicle:" textFill="#fabd02" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="tf_pickup" layoutX="144.0" layoutY="275.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="240.0" text="Pickup Location...">
+              <items>
+                <MenuItem fx:id="pm_nk" mnemonicParsing="false" onAction="#pnkOnAction" text="North Karachi" />
+                <MenuItem fx:id="pm_nn" mnemonicParsing="false" onAction="#pnnOnAction" text="North Nazimabad" />
+                  <MenuItem fx:id="pm_gi" mnemonicParsing="false" onAction="#pgiOnAction" text="Gulshan Iqbal" />
+                  <MenuItem fx:id="pm_bf" mnemonicParsing="false" onAction="#pbfOnAction" text="Bufferzone" />
+              </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="tf_dest" layoutX="144.0" layoutY="332.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="240.0" text="Destination Location...">
+               <items>
+                  <MenuItem fx:id="dm_nk" mnemonicParsing="false" onAction="#dnkOnAction" text="North Karachi" />
+                  <MenuItem fx:id="dm_nn" mnemonicParsing="false" onAction="#dnnOnAction" text="North Nazimabad" />
+                  <MenuItem fx:id="dm_gi" mnemonicParsing="false" onAction="#dgiOnAction" text="Gulshan Iqbal" />
+                  <MenuItem fx:id="dm_bf" mnemonicParsing="false" onAction="#dbfOnAction" text="Bufferzone" />
+               </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+            <Button fx:id="button_refresh" alignment="BASELINE_LEFT" graphicTextGap="30.0" layoutX="240.0" layoutY="464.0" mnemonicParsing="false" onAction="#refreshOnAction" opacity="0.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #000000;" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="534.0" prefWidth="180.0" style="-fx-background-color: ffc000;">
+         <children>
+            <VBox prefHeight="147.0" prefWidth="212.0" />
+            <Button fx:id="button_profile" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#profileOnAction" prefHeight="44.0" prefWidth="188.0" style="-fx-background-color: FABD02;" text="Profile" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_history" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#historyOnAction" prefHeight="41.0" prefWidth="258.0" style="-fx-background-color: FABD02;" text="My Trips" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_logout" alignment="BASELINE_LEFT" graphicTextGap="30.0" layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="41.0" prefWidth="258.0" style="-fx-background-color: FABD02;" text="Logout" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="103.0" fitWidth="174.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

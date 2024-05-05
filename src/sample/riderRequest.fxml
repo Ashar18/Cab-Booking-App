@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.riderRequest">
+   <children>
+      <Label layoutX="29.0" layoutY="14.0" text="Ride Request" textFill="#4d3da8" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="117.0" text="Phone No:" textFill="#b52929">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="186.0" text="Destination Location:" textFill="#b52929">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_ok" layoutX="374.0" layoutY="250.0" mnemonicParsing="false" onAction="#okOnAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #008000;" text="ACCEPT" textFill="#f2eaea">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="button_cancel" layoutX="272.0" layoutY="250.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #DC143C;" text="DECLINE" textFill="#f2eaea">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="ph" layoutX="224.0" layoutY="117.0" prefHeight="27.0" prefWidth="213.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="pl" layoutX="225.0" layoutY="151.0" prefHeight="27.0" prefWidth="213.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dl" layoutX="226.0" layoutY="186.0" prefHeight="27.0" prefWidth="213.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="82.0" text="Name:" textFill="#b52929">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="152.0" text="Pickup Location:" textFill="#b52929">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="n" layoutX="223.0" layoutY="82.0" prefHeight="27.0" prefWidth="213.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
