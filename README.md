@@ -1,4 +1,4 @@
-![image](https://github.com/Ashar18/Cab-Booking-App/assets/64865488/1681e8e1-1419-45dd-ab86-594ffe1122e7)# Cab-Booking-App
+# Cab-Booking-App
 
 ## Project Overview
 This project is a comprehensive cab booking application developed using Java, MySQL, and Scene Builder JavaFXML for an OOP project. The application provides a seamless interface for both customers and riders, offering functionalities like user registration, ride booking, and trip history management.
@@ -55,14 +55,32 @@ The database consists of four tables:
 
 ## Setup and Installation
 **1. Clone the Repository:**
+
 ![image](https://github.com/Ashar18/Cab-Booking-App/assets/64865488/70cc2d75-acf8-4683-8081-7e50636456cc)
 
 **2. Database Setup:**
 * Install MySQL and create a database named cab.
 * Import the provided SQL file to create necessary tables
+  
 ![image](https://github.com/Ashar18/Cab-Booking-App/assets/64865488/6f543cb5-503e-42a3-a80a-d0cfb2c279c6)
 
 **3. Build the Project:**
 Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).
 Ensure all necessary dependencies are included.
 Build and run the project.
+
+## Usage
+**Login**: Open the application and login as either a customer or a rider.
+**Customer Actions**: Book a ride, view profile, check trip history, etc.
+**Rider Actions**: Update current location, accept ride requests, view profile, etc.
+
+## Future Enhancements
+* **Payment Integration**: Adding online payment options for customers.
+* **Real-time Tracking**: Implementing GPS tracking for rides.
+* **Push Notifications**: Sending notifications to users about ride status.
+
+## Contributing
+Feel free to fork this repository and contribute by submitting pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+
+Developed by Ashar Nadeem
