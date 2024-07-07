@@ -19,6 +19,7 @@ When customers login, they have the following options:
 * **Logout**: Return to the login page.
 * **Book Now**: Go to the book ride page to select a vehicle type, pickup, and destination location. If no rider is in the pickup location, it will return 'Sorry, no riders found'. If there is a rider, it will display 'Searching for riders' until a rider accepts the ride.
 * **Refresh**: Refresh the page to check if the ride is accepted. If accepted, a message will pop up with the rider information.
+
 ![image](https://github.com/Ashar18/Cab-Booking-App/assets/64865488/2080a7c8-5fea-4fbe-bd05-49af28e13d29)
 ![image](https://github.com/Ashar18/Cab-Booking-App/assets/64865488/ed4fc2a6-5bf6-4cbc-8a77-2474a01c9558)
 
@@ -67,9 +68,9 @@ Ensure all necessary dependencies are included.
 Build and run the project.
 
 ## Usage
-**Login**: Open the application and login as either a customer or a rider.
-**Customer Actions**: Book a ride, view profile, check trip history, etc.
-**Rider Actions**: Update current location, accept ride requests, view profile, etc.
+* **Login**: Open the application and login as either a customer or a rider.
+* **Customer Actions**: Book a ride, view profile, check trip history, etc.
+* **Rider Actions**: Update current location, accept ride requests, view profile, etc.
 
 ## Future Enhancements
 * **Payment Integration**: Adding online payment options for customers.
@@ -80,4 +81,4 @@ Build and run the project.
 Feel free to fork this repository and contribute by submitting pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 
-Developed by Ashar Nadeem
+Developed by **Ashar Nadeem**
