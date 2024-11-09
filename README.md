@@ -1,4 +1,4 @@
-# Cab-Booking-App
+# Cab Booking App
 
 ## Project Overview
 This project is a comprehensive cab booking application developed using Java, MySQL, and Scene Builder JavaFXML for an OOP project. The application provides a seamless interface for both customers and riders, offering functionalities like user registration, ride booking, and trip history management.
